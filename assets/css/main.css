@@ -1,0 +1,83 @@
+@import './base.css';
+
+/* == Start Testimonials == */
+
+.testimonials {
+  padding-bottom: 50px;
+}
+.testimonials .container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.testimonials h2 {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+}
+.testimonials .items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.testimonials .items .item {
+  width: calc((100% - 50px) / 2);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 35px 30px;
+  box-shadow: 0px 8.237px 8.237px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.testimonials .items .item:hover {
+}
+.testimonials .items .item::after {
+  position: absolute;
+  content: "";
+  border-left: 35px solid transparent;
+  border-right: 35px solid #f4f4f4;
+  border-top: 35px solid #f4f4f4;
+  border-bottom: 35px solid transparent;
+  top: 0;
+  right: -2px;
+}
+.testimonials .items .item .user {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 13px;
+}
+
+.testimonials .items .item .user .image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 50 / 50;
+}
+.testimonials .items .item .user .text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.testimonials .items .item .user .text h3 {
+  color: #000;
+  font-weight: 700;
+  font-size: 17px;
+}
+.testimonials .items .item .user .text span {
+  color: #969696;
+  font-size: 12px;
+}
+.testimonials .items .item .rating {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.testimonials .items .item > blockquote {
+  color: #646464;
+}
+
+/* == End Testimonials == */
